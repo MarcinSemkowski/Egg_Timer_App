@@ -1,6 +1,7 @@
 package com.example.egg_timer_app;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
