@@ -18,14 +18,15 @@
         android:layout_marginBottom="1350dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.429" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="405dp"
-        android:layout_height="605dp"
+        android:layout_width="389dp"
+        android:layout_height="525dp"
         android:layout_marginStart="3dp"
         android:layout_marginLeft="3dp"
         android:layout_marginTop="28dp"
@@ -39,7 +40,7 @@
         app:srcCompat="@drawable/egg" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/timerTextView"
         android:layout_width="96dp"
         android:layout_height="79dp"
         android:layout_marginStart="113dp"
@@ -74,7 +75,7 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/timerTextView"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
