@@ -27,19 +27,20 @@ public class MainActivity extends AppCompatActivity {
         timerTetView.setText( Integer.toString(minutes) + ":" + secondString);
     }
 
-    public void controllTimer(View view){
+    public void controlTimer(View view){
 
         new CountDownTimer(timerSeekBar.getProgress() * 1000, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
                 updateTimer((int) millisUntilFinished / 1000);
+
             }
 
             @Override
             public void onFinish() {
-
+              Log.i("finished","timer done");
             }
-        };
+        }.start();
 
     }
 
