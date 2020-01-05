@@ -2,8 +2,10 @@ package com.example.egg_timer_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.widget.SeekBar;
@@ -38,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-              Log.i("finished","timer done");
+                MediaPlayer  mplayer = MediaPlayer.create(getApplicationContext(),R.raw.airhorn);
+                mplayer.start();
             }
         }.start();
 
