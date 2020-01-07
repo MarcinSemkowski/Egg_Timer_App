@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         if(secondString == "0"){
             secondString = "00";
 
+        }else if(seconds <=9){
+          secondString = "0" + secondString;
         }
 
         timerTetView.setText( Integer.toString(minutes) + ":" + secondString);
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void controlTimer(View view){
 
-        new CountDownTimer(timerSeekBar.getProgress() * 1000, 1000) {
+        new CountDownTimer(timerSeekBar.getProgress() * 1000 + 100, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
                 updateTimer((int) millisUntilFinished / 1000);
